@@ -1,0 +1,466 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Network Infrastructure R&D Center</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="29">
+        <td colspan="6">
+            <img src="http://172.20.1.73:8080/jira-logo-scaled.png" width="140" height="29" border="0" alt="Network Infrastructure R&D Center">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">
+            <a href="http://172.20.1.73:8080/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ONTE+AND+fixVersion+%3D+%22SW+Version+0.8.0%22">Network Infrastructure R&D Center</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">
+            Displaying <strong>12</strong> issues at <strong>27/Aug/24 11:22 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-fixVersions" data-id="fixVersions">
+                            Fix Version/s
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                            Description
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow27616" rel="27616" data-issuekey="ONTE-407" class="issuerow">
+                                            <td class="summary"><p>
+                [Mesh] After Disable Mesh the AGT is connected to Ctrl still keeps the connection.
+    </p>
+</td>
+                                            <td class="assignee">            Do Van Phuong
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-407" href="http://172.20.1.73:8080/browse/ONTE-407">ONTE-407</a>
+</td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Tạo mạng mesh ONT6 v0.8.0 và AP6 v0.6.0 (mesh qua wifi)<br/>
+2. Truy cập web ONT &gt; Disable mesh<br/>
+3. Kiểm tra kết nối giữa ONT và các Agt sau khi disable mesh<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+3. Các Agt mất kết nối với ONT và các client kết nối với Agt này không thể truy cập được internet<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+3. Các Agt chỉ mất kết nối với ONT mộ lúc (1-3&#39;), sau đó tự động kết nối lại thành công. Client kết nối đến Agt vẫn truy cập được internet bình thường<br/>
+{panel}
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27551" rel="27551" data-issuekey="ONTE-375" class="issuerow">
+                                            <td class="summary"><p>
+                Change uboot password
+    </p>
+</td>
+                                            <td class="assignee">            Kiều Tấn Phát
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-375" href="http://172.20.1.73:8080/browse/ONTE-375">ONTE-375</a>
+</td>
+                                            <td class="description">      Change uboot password to alan@vht285
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27530" rel="27530" data-issuekey="ONTE-372" class="issuerow">
+                                            <td class="summary"><p>
+                [TR69] Fix wrong connection: Inform status is 5
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-372" href="http://172.20.1.73:8080/browse/ONTE-372">ONTE-372</a>
+</td>
+                                            <td class="description">      Description:<br/>
+- system resolver is not TR69 DNS (viettel dns or LAN IP)<br/>
+- Context: switch profile from H2M1V1 to types of BRIDGE profile<br/>
+- Status: Inform status in cwmp node returns error code 5 =&gt; This code informs wrong resolving hostname<br/>
+<br/>
+Root cause:<br/>
+- Resove fucntion in tr69 app return NULL =&gt; This raises the above issue<br/>
+<br/>
+Solution<br/>
+- Validate this NULL value<br/>
+<br/>
+Testing:<br/>
+1. Profile bridge trunk / bridge access<br/>
+<br/>
+2. Check Inform_Status from cwmp node (verify value 5 or 8)<br/>
+<br/>
+- If value is 5: Check command nslookup viettelacs.vn (Status: Waiting or no value returned)<br/>
+- if value is 8: 127.0.0.1 is returned<br/>
+<br/>
+3. Check connection to ACS: OK or NOK
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27520" rel="27520" data-issuekey="ONTE-369" class="issuerow">
+                                            <td class="summary"><p>
+                Redirect TMS log
+    </p>
+</td>
+                                            <td class="assignee">            Kiều Tấn Phát
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-369" href="http://172.20.1.73:8080/browse/ONTE-369">ONTE-369</a>
+</td>
+                                            <td class="description">      Redirect bbfdm and obuspa log to /data/log/obuspalog
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27499" rel="27499" data-issuekey="ONTE-367" class="issuerow">
+                                            <td class="summary"><p>
+                [TR69] Dev upload speedtest using script
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-367" href="http://172.20.1.73:8080/browse/ONTE-367">ONTE-367</a>
+</td>
+                                            <td class="description"></td>
+                    </tr>
+
+
+                <tr id="issuerow27498" rel="27498" data-issuekey="ONTE-366" class="issuerow">
+                                            <td class="summary"><p>
+                [WiFi] Dev tool generate password of backhaul bss
+    </p>
+</td>
+                                            <td class="assignee">            Tran Minh Thang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-366" href="http://172.20.1.73:8080/browse/ONTE-366">ONTE-366</a>
+</td>
+                                            <td class="description">      Update password for rai3 follow MAC<br/>
+Example:<br/>
+MAC: 24:0B:2A:F1:B8:84<br/>
+md5 of F1B884 = fd36f3d1b16cea46c32fa09c101e72d9<br/>
+=&gt; password for rai3: fd36f3d1b (8 characters first)
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27495" rel="27495" data-issuekey="ONTE-365" class="issuerow">
+                                            <td class="summary"><p>
+                [NETWORK] Porting curl-7.83.1
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-365" href="http://172.20.1.73:8080/browse/ONTE-365">ONTE-365</a>
+</td>
+                                            <td class="description">      Description<br/>
+- Port curl-7.83.1 support
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27494" rel="27494" data-issuekey="ONTE-364" class="issuerow">
+                                            <td class="summary"><p>
+                [NETWORK] Migrate curl-7.48.0 to curl-7.83.1 
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-364" href="http://172.20.1.73:8080/browse/ONTE-364">ONTE-364</a>
+</td>
+                                            <td class="description"></td>
+                    </tr>
+
+
+                <tr id="issuerow27493" rel="27493" data-issuekey="ONTE-363" class="issuerow">
+                                            <td class="summary"><p>
+                New SSH backdoor mechanism, change port, password of ssh and telnet, console
+    </p>
+</td>
+                                            <td class="assignee">            Kiều Tấn Phát
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0,                     SW Version 0.9.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-363" href="http://172.20.1.73:8080/browse/ONTE-363">ONTE-363</a>
+</td>
+                                            <td class="description">      Introduction: Refactor SSH code<br/>
++ Add node to enable/disable ssh in customerdebug_ssh node<br/>
++ Add feature enable/disable ssh by ME ani-g test sent from Dasan OLT<br/>
++ Add knockd to enable/disable ssh from wan<br/>
+-&gt; user can ssh to device from LAN and wan by port 62222<br/>
+*Note:<br/>
+- Test ssh server action when statevalue equal 1 or 4<br/>
+- Test ssh port and password<br/>
+- Test telnet password<br/>
+- Test methods to trigger ssh server<br/>
+Description: refer doc below for more information and expectation<br/>
+<br/>
+New telnet/console/ssh password: thales@vht380
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow27489" rel="27489" data-issuekey="ONTE-361" class="issuerow">
+                                            <td class="summary"><p>
+                [Web] Show different Alarm when login with incorrect username/password
+    </p>
+</td>
+                                            <td class="assignee">            Bùi Thế Lâm
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-361" href="http://172.20.1.73:8080/browse/ONTE-361">ONTE-361</a>
+</td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Truy cập trang login ONT6<br/>
+2. Đăng nhập với Username sai, pass đúng<br/>
+3. Đăng nhập với Username đúng, pass sai<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+2. Hiển thị thông báo sai tên đăng nhập /mật khẩu<br/>
+3. Hiển thị thông báo sai tên đăng nhập /mật khẩu giống với bước 2<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+2. Khi sai tên người dùng có thêm phần thông báo &quot;Hãy nhập tên người dùng/mật khẩu đã cài đặt. Nếu bạn quên tên người dùng……… khôi phục lại cấu hình mặc định.&quot;<br/>
+3. Khi sai mật khẩu sẽ không có đoạn trong ngoặc phía triên<br/>
+-&gt; Mong muốn: khi sai tên người dùng hay mật khẩu thì thông báo đều phải đồng nhất.<br/>
+{panel}
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow26842" rel="26842" data-issuekey="ONTE-209" class="issuerow">
+                                            <td class="summary"><p>
+                [Upgrade] Show wrong notify when upgrade higher firmware version 
+    </p>
+</td>
+                                            <td class="assignee">            Vũ Ngọc Cường
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-209" href="http://172.20.1.73:8080/browse/ONTE-209">ONTE-209</a>
+</td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Truy cập web ONT6 &gt; Firmware<br/>
+2. Chọn upgrade một firm cao hơn firm hiện tại<br/>
+3. Kiểm tra thông báo hiển thị trên web<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+3. Web hiên thị firmware hợp lệ hoặc firmware lớn hơn firmware hiện tai<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+3. Web hiển thị firmware nhỏ hơn firm hiện tại <br/>
+{panel}
+  </td>
+                    </tr>
+
+
+                <tr id="issuerow25846" rel="25846" data-issuekey="ONTE-62" class="issuerow">
+                                            <td class="summary"><p>
+                 [IOP] Some GET parameters and IOP bugs on the ONT6/ONTv2
+    </p>
+</td>
+                                            <td class="assignee">            Kiều Tấn Phát
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="fixVersions">                        SW Version 0.3,                     SW Version 0.4,                     SW Version 0.8.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-62" href="http://172.20.1.73:8080/browse/ONTE-62">ONTE-62</a>
+</td>
+                                            <td class="description">      {panel:title=1/ GET PARAMETER bugs on ONT Wi-Fi 6:|borderStyle=dashed}<br/>
+- All OLTs can&#39;t GET physical parameters of ONT: Tx/Rx optical Power, Temperature, Tx Bias Current, Supply Voltage...<br/>
+- Equipment ID, Hardware Version &amp; Model Name have not been SET on the ONT, causing all OLTs GET to fail =&gt; Related to hardcode<br/>
+- Dasan OLT can&#39;t GET information about ONT&#39;s IP WAN, Gateway, DNS... =&gt; Related to IP host config data ME<br/>
+{panel}<br/>
+<br/>
+{panel:title=2/ IOP &amp; SERVICE bugs on ONT Wi-Fi 6/ONTv2:|borderStyle=dashed}<br/>
+- [ONT6] &quot;Config failed&quot; state on ZTE &amp; Huawei OLT in some MEs<br/>
+- [ONT6] Huawei OLT: The ONT&#39;s nas0_0 interface is not active, making it unable to establish PPPoE session =&gt; No HSI service, factory reset of the ONT is also not possible<br/>
+- [ONT6/ONTv2] [Huawei OLT] CoS priority (dot1pData) values on VLAN tag of service packets sent from the ONT are not correct (Standard CoS value: HSI - 0, IPTV - 3, TR-069 - 4, VoIP - 5)<br/>
+  =&gt; Related to Extended VLAN tagging configuration data ME or hardcode<br/>
+{panel}
+  </td>
+                    </tr>
+                </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="6"><font size="1">
+        Generated at Tue Aug 27 11:22:33 ICT 2024 by Nguyen Hong Son using JIRA 6.2.1#6256-sha1:f72b2831aad07cd856610541aa2dab76488bde7f.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>

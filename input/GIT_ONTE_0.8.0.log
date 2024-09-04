@@ -1,0 +1,79 @@
+96d96c28d	hoangtu1	[ONTE-42]<release>Chanage firmware version to 0.8.00
+adccf8be9	phatkt	[ONTE-328]<Task>[Production]: Disable power led config
+5bc9e0b02	phatkt	[ONTE-328]<Task>[Production]: add on/off wifi and Power led for command sys led
+72676a605	phuongdv12	ONTE-355: <feature> [WIFI] [LED] Add user command to control WiFi Radio Led
+063787284	Tran Minh Thang	[ONTE-349]<feature>[CONFIG_GPIO]: Config gpio for multi hardware, 2 bootloader
+b5ddb5b16	Tran Minh Thang	[ONTE-362]<feature>[CONFIG]: Control led power on boot
+405b73203	Tran Minh Thang	[ONTE-349]<feature>[CONFIG_GPIO]: Change GPIO config for new hardware
+32e400b55	Ho Hung Duy	[ONTE-280]<Refactor>[TMS]: Remove file bbf.secure
+e6324f824	Ho Hung Duy	[ONTE-280]<experiment>[TMS]: Turn off handle for SIGSEGV to get more information for debuging
+9a7944a0d	tramtn	ONTE-376<bugfix>[NETWORK] tr69 app is crashed
+809fb67b8	phatkt	[ONTE-375]<Task>[Bootloader]: Change uboot password
+63ea5d8a9	phatkt	[ONTE-363]<Task>[Backdoor]: change ssh,telnet port and password
+f9e219741	Ho Hung Duy	[ONTE-374]<task>[Porting]: Porting iperf3 package
+baf91b470	lambt9	[ONTE-207]<Bug>[LAN] Lack IP client in udhcp_lease: Add log to tracking IP
+6479bbddd	lambt9	[ONTE-361]<Bug>[Web] Show different Alarm when login with incorrect username/password
+a6acf3468	tramtn	ONTE-372<bugFix>[TR69] Wrong connection with inform status 5
+12c505846	sonnh68	[ONTE-373]<bugfix>[Web] Restore config not work as expected
+cf8baf256	lambt9	[TMS] Dev AccessControl API for TMS: Edit cfg_ng to get Hostname
+e82191237	ducndc	[ONTE-371]<task>[TMS]: Update connection/disconnection of STA for TMS
+ac56f0b46	hoangtu1	[ONTE-280]<merge>[TMS]Merge branch 'feature/tms/dev_core' into dev
+720e1e77e	lambt9	[ONTE-357]<Feature>[TMS] Dev AccessControl API for TMS: Fix lost rule when get
+29b148410	phatkt	[ONTE-341]<feature>[TMS]: Fix ethernet api port status
+764cde835	phatkt	[ONTE-369]<Improve>[Log]: Redirect TMS log
+72d956e9a	hoangtu1	ONTE-371<bug>[TMS] Fix cannot build mapd_r
+e20e96d21	lambt9	[ONTE-239]<Inprove>[Log] Remove unnecessary log <cont>
+184aa5aac	Tran Minh Thang	[ONTE-366]<chore>[WiFi]: Dev tool generate password of backhaul bss
+73d27f4ea	phatkt	[ONTE-363]<Task>[Backdoor]: Porting SSH backdoor
+7ed3fff8a	phatkt	[ONTE-294]<Task>[PON_LED]: Flashing pon led when download firmware from OLT
+23596b175	phatkt	[ONTE-294]<Task>[PON_LED]: Porting opensource patch of upgrade firmware hook
+f0c509f35	phatkt	[ONTE-237]<Task>[Log]: Improve wifi log
+7fb471592	Ho Hung Duy	[ONTE-280]<refactor>[TMS]: Remove uneccessary calls tcapi_save()
+c21ecb900	ducndc	[ONTE-371]<task>[TMS]: Update alarm mesh event
+4101c916d	Ho Hung Duy	[ONTE-370]<feature>[TMS]: Dev TMS API for FM
+0ec0705d8	Ho Hung Duy	[ONTE-341]<bugfix>[TMS]: Fix bug can not open fd in bbfdm
+a430939f7	ducndc	[ONTE-358]<feature>[TMS]: Update wifi neighbor scanning
+212103b8f	Ho Hung Duy	[ONTE-280]<Refactor>[TMS]: Remove file bbf.secure
+85b94db7f	Ho Hung Duy	[ONTE-280]<refactor>[TMS]: Add more log for debug mapd_cli
+473b51328	Ho Hung Duy	[ONTE-298]<bugfix>[TMS]: Fix bug crash bbfdm
+aa7668010	sonnh68	[ONTE-340]<feature>[SafeHome] disable safehome feature
+0d08eeb0b	hoangtu1	[ONTE-358]<feature>[TMS]: Fix conflict after merge TMS Wifi: duplicate wifi
+092f678ac	tramtn	[ONTE-280][TMS]: Porting obuspa source code and its dependency - include inttypes.h
+227407e14	hoangtu1	[ONTE-328]<Task>[Production]: Add command for set/display vthwver, sys led/button for production(fix order of fields in flash)
+32c8ead29	tramtn	ONTE-367<feature>[TR69] Dev upload speedtest using script
+0c0813eae	tramtn	ONTE-364<feature>[NETWORK] Migrate curl-7.48.0 to curl-7.83.1
+f4e9ee48d	tramtn	ONTE-365<feature>[NETWORK] Porting curl-7.83.1
+3f23c3aae	hoangtu1	[ONTE-358]<feature>[TMS]: Fix conflict after merge TMS Wifi
+bdff5e3f4	Tran Minh Thang	[ONTE-311]<feature>[TMS]: Dev WiFi Associated Device Stats Node
+91880702a	Tran Minh Thang	[ONTE-311]<feature>[TMS]: Dev WiFi Associated Device Stats Node
+b33b84a99	Tran Minh Thang	[ONTE-311]<feature>[TMS]: Dev WiFi Associated Device Node
+11aac469e	Tran Minh Thang	[ONTE-311]<feature>[TMS]: Fix SSIDReference Associated device node, supported channel bandwidth radio node
+2223dc58c	Tran Minh Thang	[ONTE-358]<feature>[TMS]: Merge api TMS WiFi
+d37c4a75f	Tran Minh Thang	[ONTE-358]<feature>[TMS]: Merge api TMS WiFi
+6c4cae551	Tran Minh Thang	[ONTE-311]<feature>[TMS]: Dev WiFi Accesspoint, Accessponit Security node
+76d3cacdb	Tran Minh Thang	[ONTE-311]<feature>[TMS]: Dev WiFi SSID, SSID stats node
+0eb20ada5	Tran Minh Thang	[ONTE-311]<feature>[TMS]: dev wifi radio node
+c62366240	tramtn	ONTE-327<feature>[TMS] Dev DHCPv4 API
+8f6b90a95	tramtn	ONTE-298<feature>[TMS] Dev IP API
+6562c5852	hoangtu1	[ONTE-341]<feature>[TMS]: Dev TMS Ethernet API
+638dfc7d6	phatkt	[ONTE-345]<feature>[TMS]: Dev PPP api for TMS
+60ffa70e1	phatkt	[ONTE-344]<feature>[TMS]: Dev Bridge api for TMS
+27d333b56	phatkt	[ONTE-342]<feature>[TMS]: Dev Optical api for TMS
+39535f424	lambt9	[ONTE-357]<Feature>[TMS] Dev AccessControl API for TMS
+724ec40a3	lambt9	[ONTE-343]<Feature>[TMS] Dev Hosts API
+3afc76736	hoangtu1	ONTE-280<merge> Update 'dev' changes into feature/tms/dev_core
+2ced266df	Ho Hung Duy	[ONTE-280]<bugfix>[TMS]: Fix bug IOP with TMS Server. Server can not understand boolean type
+d2d48e23f	Ho Hung Duy	[ONTE-280]<bugfix>[TMS]: Fix wrong uppercase in topic and mqtt localagent endpointid
+858b3c49a	Ho Hung Duy	[ONTE-280]<bugfix>[TMS]: Lack of target bbfdm, bbfdm_clean in make_apps
+ee609023b	Ho Hung Duy	[ONTE-280]<bugfix>[TMS]:Fix bug MQTT authenctication failed because of MQTT wrong password
+ab1fb09c9	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Add /tmp/bbfdm folder at bootime to fix bug input.json
+44f5f5c36	Ho Hung Duy	[ONTE-280]<bugfix>[TMS]: Fix get wrong value for path: Device.DeviceInfo.Description
+f81f31f20	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Refactor BBFDMD. Add section platform_libbf for distinguishing between 2 platform. Remove And Modify function related to uci. Add function related to DeviceInfo
+830e5e24c	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Adding the configuration manager for bbfdm in cfg_ng
+9a3694d4a	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Porting original source code of bbfdm package. Port jq package
+4ced84e3d	Ho Hung Duy	[ONTE-280]<bugfix>[TMS]: Fix bug crash obuspa because of linking 2 versions of libcrypto. Fix bug runtime when linking to curl
+1759d4a3a	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Add new cfg_ng for manage obusa. Modify source code for handling config from romfile in obuspa
+a6840e07e	Ho Hung Duy	[ONTE-280]<chore & fix>[TMS]: Change mode of obuspa open source (Change to mode 644) and Fix bug build CMake of obuspa
+8305ef04b	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Porting cfg_ng for obuspa
+06d1d0f1f	Ho Hung Duy	[ONTE-280]<chore>[TMS]: Change mode of obuspa open source
+5b387f525	Ho Hung Duy	[ONTE-280]<feature>[TMS]: Porting obuspa source code and its dependency

@@ -1,0 +1,70 @@
+7ab47b712	hoangtu1	[ONTE-328]<Task>[Production]: Add command for set/display vthwver, sys led/button for production(fix order of fields in flash)
+9ddd2d32f	hoangtu1	[ONTE-42]<release>Change firmware version to 0.7.0
+146b996b5	hoangtu1	ONTE-340<merge>Merge branch 'feature/vsafes' into dev
+28ede2e2d	lambt9	[ONTE-317]<Web>[Parental Control] All fields need to validate<cont>
+3427da237	lambt9	[ONTE-323]<Web>[Uplink mirroring] Still allow to choose LAN Port when uplink mirroring disabled
+eaad2f5ee	tramtn	ONTE-356<feature>[TR69] Modify ACS URL
+809d06417	tramtn	ONTE-354<bugFix>[TR69] ONT can not connect to ACS
+cd7713ec6	tramtn	ONTE-350<bugFix>[TR69] Side effects when tr69 coordinate operations with other apps
+8388ed52c	cuongvn3	[ONTE-302][ONTE-222]<bug>[WiFi Schedule] Do not apply rules of success at a special time
+8a9aa34bb	phatkt	[ONTE-347]<Task>[process_monitor]: Enable Process_monitor app
+0664d0a7c	phatkt	[ONTE-127]<bug>[IOP]: Huawei & Dasan OLT can't GET Multicast forwarding-table/IGMP group list of ONT
+7c55b22cc	phatkt	[ONTE-328]<Task>[Production]: Add command for set/display vthwver, sys led/button for production(phase 1)
+b5e626639	sonnh68	[ONTS-340]<feature>[SafeHome] improve monitor client
+697e31f19	tramtn	ONTE-274<bugFix>[TR69] Change Authentication Mode from ACS getting error
+8e50ec105	lambt9	[ONTE-319]<Web>[Parental Control] Conflict appear when set many schedules and rules
+dc29fe67d	lambt9	[ONTE-318]<Web>[Parental Control] Lost configuration when add max schedules for a rule
+c7cdbb32e	lambt9	[ONTE-317]<Web>[Parental Control] All fields need to validate
+a947ef1ac	sonnh68	[ONTE-340]<feature>[SafeHome] porting hotfix crash mqttt publish
+29aec2612	sonnh68	[ONTE-340]<feature>[SafeHome] update Makefile
+f82056667	sonnh68	[ONTE-340]<feature>[Safehome] turn off p0f process, enable sort command of busybox, use REDIRECT instead of DNAT in xp6tables nat
+ab8aa8464	sonnh68	[ONTE-340]<feature>[Safehome] use opensource of iptables (xptables) for filterd
+6e525fab5	sonnh68	[ONTE-340]<feature>[vSafes] create webpage for Safehome feature
+57be68a41	sonnh68	[ONTE-340]<feature>[vSafes] update firewall rule
+339fce439	sonnh68	[ONTE-340]<feature>[vSafes] porting vSAfes 14062024 cont
+2dcfbefa1	sonnh68	[ONTE-346]<chore> create /data/tmp/
+158b5f452	sonnh68	[ONTE-340]<feature>[vSafes] porting vSafes 14062024
+401b4b6b2	sonnh68	[ONTE-240]<feature>[vSafes] porting dnsmasq 2.85 as name vcs-dnsmasq, porting libpaho
+23adaf87e	sonnh68	[ONTE-240]<feature>[vSafes] develop cfg node for vSafes service
+d34f2e050	phuongdv12	ONTE-287: [WIFI] Fix bug PMF feature when switch mode Bandsteering
+47d23c87e	duongnt62	ONTE-235]<feature>[WiFi] Enable 802.11k, 802.11v
+5ebaa7918	tramtn	ONTE-199<feature>[TR69] Develop WLAN device parameters - Transmit rate params
+39b34fd7d	duongnt62	[ONTE-235]<feature>[WiFi] Improve BTM message
+bb6f769ed	sonnh68	[ONTE-171]<feature>[Parental control] improve url filtering
+247fa8210	tramtn	ONTE-324<bugFix>[TR069] TR69 crash when setting dbgflag to 3
+e70698c18	tramtn	ONTE-234<feature>[TR069] Develop WAN device params - CurrentMRUSize
+c806be1dd	Hoang Tran	ONTE-297<bug>[IOP] Cannot upgrade firmware by OLT ALU
+cb6950684	lambt9	[ONTE-151]<bug>[WIFI]: Change BSSID num of wifimactab node to 4 <cont>
+f5e02a6f9	lambt9	[ONTE-322]<Bug>[Security] Prevent XSS and and permit special characters
+76c4ead37	tramtn	ONTE-199<feature>[TR69] Develop WLAN device parameters - Remove the parameters labeled as TCSUPPORT_CT_CWMP_E8BPARAMETER
+b7ee0d5a2	tramtn	ONTE-321<bugFix>[TR069] ONT online but can not process ACS query packet
+47d9dbcd6	lambt9	[ONTE-140]<Bug>[Web]Disable the ability of configurable input fields in Webpage if Interface wan is Internet and from OMCI<cont>: Enable config for Internet OMCI
+440a8fe01	cuongvn3	[ONTE-151]<bug>[WIFI]: Change BSSID num of wifimactab node to 4
+a7f5ba2e5	cuongvn3	[ONTE-312]<bug>[WIFI]: Can not config SSID4 on WiFi 2.4Ghz page
+5a1e5200e	cuongvn3	[ONTE-179]<feature>[Wifi Scheduling]: Check common time when setting rules during running time
+61e4b77fe	phatkt	[ONTE-254]<feature>[gitrevision]: Porting scontrol(fix lack of gitrevision file)
+8a3222110	tramtn	ONTE-232<feature>[TR69] Develop lanhost config management params
+eb5388156	lambt9	[ONTE-272]<Web>[Connected Device] Display duplicated connection and display released IP
+79abc29c2	hieupt35	[ONTE-313]<bug>[KCS]:fix restore config validation timing
+a4cf87e57	hieupt35	[ONTE-313]<bug>[KCS]:Fix ping ONT from WAN(work-around)
+1a892083e	tramtn	ONTE-234<feature>[TR069] Develop WAN device params - layer3forwarding
+9bbec585a	tramtn	ONTE-201<feature>[TR69] Develop LAN device parameters - LanInterfaceEntry
+e0ac710e5	tramtn	ONTE-199<feature>[TR69] Develop WLAN device parameters - Define wirelessMode Map
+a5226991f	tramtn	ONTE-199<feature>[TR69] Develop WLAN device parameters - Redefine WLAN INSTANCE
+7750818fb	tramtn	ONTE-231<feature>[TR69] Develop DeviceInfo params - FirstUseDate
+a507a4d8e	tramtn	ONTE-230<feature>[TR69] Develop diagnostics params - MinimumResponseTime
+c129e0f40	tramtn	ONTE-187<feature>[TR69] Develop Time params - DaylightSaving params
+6ab54f004	tramtn	 ONTE-234<feature>[TR069] Develop WAN device params - Default gateway
+5b37f04f6	tramtn	 ONTE-201<feature>[TR69] Develop LAN device parameters - Hosts
+63934cd36	tramtn	ONTE-231<feature>[TR69] Develop DeviceInfo parameters - VendorConfigFile
+c5a763da7	tramtn	ONTE-199<feature>[TR69] Develop WLAN device parameters - Vendor-defined params
+868472520	tramtn	ONTE-199<feature>[TR69] Develop WLAN device parameters
+51cac1574	tramtn	ONTE-186<feature>[TR69] Develop WAN IP-PPP device parameters
+5d6cad8cf	tramtn	ONTE-201<feature>[TR69] Develop LAN device parameters
+e50372abb	tramtn	ONTE-230<feature>[TR69] Develop diagnostic parameters
+edbb9ab7e	Hoang Tran	ONTE-215<Task> Change Hardware version to VGP42X6M001
+e308538ca	Hoang Tran	ONTE-75<bug> Uplink mirroring not  show
+5becada54	Hoang Tran	Revert "[ONTE-140]<bug>[Web]: Disable the ability of configurable input fields in Webpage if Interface wan is Internet and from OMCI"
+d88b5ad72	Hoang Tran	ONTE-236<bug>Fix ssh still open despite state value
+3c1e81463	phuongdv12	ONTE-296: <improve> [IOP][WIFI][MESH] If Agent does not support WPA3 but Controller setup WPA3 then Agent is synchronized to WPA2
+a6072d62d	phuongdv12	ONTE-290: <bug>[LED][WIFI] Fix bug wifi band 2.4GHz disabled and band 5GHz enabled but Led 2.4GHz still turn on

@@ -1,0 +1,61 @@
+a21e4f4f2	hoangtu1	[ONTE-430] <Release> Change firmware version to 0.9.0
+c9fddf1e4	phuongdv12	ONTE-407: <issue>[WIFI] [MESH] Down the backhaul AP iface when mesh is disabled and vice versa
+24e1181b3	phuongdv12	ONTE-421: <panic>[WIFI] [MESH]: Fix bug kernel panic due to BTM event is not enqueue correctly
+760a4eb8f	phuongdv12	ONTE-423: [WIFI] [MESH] [LOG] Optimize log of WiFi and Mesh module
+fb434718b	lambt9	[ONTE-357]<Feature>[TMS] Dev AccessControl API for TMS: fix does not update scheduleNum when delete from TMS
+b618e9f2b	lambt9	[ONTE-429]<Task>[Parentalctrl] Do not permit apply when has 0 schedule
+9e65a8b18	lambt9	[ONTE-427]<Bug>[Web] Smart alert does not contain English translate
+0371245a0	lambt9	[ONTE-404]<Bug>[Parental Control] Do not disable the URL field and the schedule when choosing access is deny
+32e281070	lambt9	[ONTE-393]<Bug>[WiFi] Default Transmitted Power is wrong
+002ab8cf9	lambt9	[ONTE-391]<Bug>[Web]Display wrong link speed between Ctrl ONT6 and lan client
+f2e9e95a9	lambt9	[ONTE-357]<Bug>[TMS] Dev AccessControl API for TMS: Edit cfg_ng to get Hostname: cont
+41ab25b1e	lambt9	[ONTE-390]<Bug>[Web] Cannot config in DDNS page
+312ea4b62	cuongvn3	[ONTE-222][ONTE-401][ONTE-402]<bug>[WiFi Schedule]: Fix wifi scheduling error not working as expected
+c4f670eb2	cuongvn3	[ONTE-420]<task>[Web]: Display TMS status on device info page
+79518fb30	Tran Minh Thang	[ONTE-406]<fix>[LED]: all led on when press reset factory
+4059faa33	duyhh2	 [ONTE-392]<bug>[IOP]:[WAN] WAN default route configuration is not successfully overwritten after Reboot ONT6 (with OLT Huawei)
+2322ed333	hoangtu1	ONTE-280<merge>[TMS]Merge remote-tracking branch 'origin/feature/tms/dev_core_v2' into dev
+c04f4ed66	ducndc	[ONTE-180]<bug>[Mesh]: remove wapp_iface_deinit
+94fe175eb	phatkt	[ONTE-363]<bug>[ssh]: fix cannot enable ssh from dasanOLT, unneed mib upload for ME248
+0dfaa4d03	phuongdv12	ONTE-353: <improve> [MESH][BANDSTEERING] Fix bug mapd client has not supported channels
+fe95fb8de	phuongdv12	ONTE-353: <improve> [BANDSTEERING] Fix bug pre-determine bssid for rrm measure fail. Fill Neighbor report with own BSS at other band
+67cc43196	phuongdv12	ONTE-353: <improve>[MESH] [BANDSTEERING] Improve bandsteering 802.11k and 802.11v params
+efc2a8b0f	phuongdv12	ONTE-353: <improve><bug>[MESH] [BANDSTEERING]: Fix bug length of beacon report IE too short
+bf9147745	ducndc	[ONTE-348]<task>[Mesh]: Increate activity threshold
+3092545cc	ducndc	[ONTE-348]<task>[Mesh]: Bandsteering when 1 node
+09964f9c0	ducndc	[ONTE-348]<task>[Mesh]: Steering when client is active state
+cfe54ab18	phuongdv12	ONTE-353: <improve>[MESH] [BANDSTEERING] Improve band steering algorithm and parameters
+dafa468cc	thangtm22	[ONTE-339]<feature>[KCS_T6/24][ATTT] Injection XSS on home and wifi page
+74ac3e46c	tramtn	ONTE-376<bugfix>[NETWORK] tr69 app is crashed - Change rule when calling ubus_free
+fe181099b	Pham Thu Nga	[ONTE-303]<bug>[Wifi] Do not successfully configure 20MHz for 5G bands
+0abb9ce28	Pham Thu Nga	[ONTE-152]<bug>[Wifi] Cannot apply success mode 802.11(remove modenac)
+76e1b4408	ducndc	ONTE-387<task>[Mesh]: Update vt_save_topology
+24abe44fb	lambt9	[ONTE-386]<Task>[WEB] Add Save/Clear Topo Button at Topology page
+2558e1bc5	duongnt62	ONTE-428<feature>[Log] Reduce mesh log
+2959bad1e	duongnt62	ONTE-385<feature>[Mesh] Feature Save/Clear Topology
+bee678745	ducndc	[ONTE-371]<task>[Mesh]: Update api multiap
+f4e5b3295	Ho Hung Duy	[ONTE-370]<refactor>[TMS]: Refactor code obuspa FM - Squash commit in branch dev_fm from 24/7-10/8
+bb898e2b6	phatkt	[ONTE-425]<Task>[DHCP]: change dhcpoffer lease time
+3b24869a7	phatkt	[ONTE-424]<Task>[stp]: Enable stp by default
+183bb01b9	phatkt	[ONTE-413]<bug>[Firmware]: do not allow to upgrade firmware which has equal version
+f51c30955	phatkt	[ONTE-422]<Task>[Log]: Remove empty log in log files
+2ed09c2a0	phatkt	[ONTE-419]<Task>[OMCI]: Add funtion to reply system condition ME for DASAN OLT
+18cc06500	sonnh68	[ONTS-373]<bugfix>[Web] check md5sum before restore config
+8c2a362b2	phatkt	[ONTE-418]<bug>[IOP]: Fix IOP with ACOM
+23b18ff02	phatkt	[ONTE-388]<BUG>[multicast]: Fix can not get vid with profile BRIDGE TRUNK and ONU BRIDGE
+67394fe9d	phatkt	[ONTE-388]<BUG>[multicast]: Can't get client ip when fourth octet of client ip equal 0
+66470ee7d	phatkt	 [ONTE-389]<Chore>[ssh]: Disable HAVE_VT_RELEASE_FOR_KCS and duplicated HAVE_VT_BACKDOOR
+44c573433	phatkt	[ONTE-389]<Chore>[ssh]: Cannot clean knockd
+5bb555f31	tramtn	ONTE-376<bugfix>[NETWORK] tr69 app is crashed - Rule for svchost_send_event
+3715d865e	tramtn	 ONTE-352<improvement>[TR69] Improve TR69 performance
+c2f9b4b86	tramtn	ONTE-381<improvement>[TR69] Improve TR69 connection
+f02023236	tramtn	ONTE-377<build> Porting gdb tool
+8259acbfc	Ho Hung Duy	[ONTE-280]<improve>[TMS]: Dev tcapi autocommit API and tcapi set/get API in bbfdm
+5f326ecd1	Ho Hung Duy	[ONTE-280]<refactor>[TMS]: Add MQTT status of obuspa to romfile config
+4bcc34371	Ho Hung Duy	[ONTE-280]<fix>[TMS]: Fix build bug for bbfdm
+84ae9519f	hoangtu1	ONTE-363<chore> Add change password for console
+cb424381c	lambt9	[TMS] Dev AccessControl API for TMS: Edit cfg_ng to get Hostname
+edec229ee	Ho Hung Duy	[ONTE-280]<Refactor>[TMS]: Remove file bbf.secure
+8ef0388e9	Ho Hung Duy	[ONTE-280]<experiment>[TMS]: Turn off handle for SIGSEGV to get more information for debuging
+34f4f5871	ducndc	[ONTE-371]<task>[TMS]: Send auth fail WPA3/SAE from driver to mapd
+b21a761ff	ducndc	[ONTE-371]<task>[TMS]: Update connection/disconnection of STA for TMS

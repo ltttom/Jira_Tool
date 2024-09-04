@@ -1,0 +1,40 @@
+ONTE-462-<bug>[WIIF][TMS] Fix bug config TxPower on device Web and TMS fail
+ONTE-432-[Web] Error when double click add new rule in Parental Control page
+ONTE-431-[DEBUG] Porting Valgrind tool
+ONTE-430-Release firmware 0.9.0
+ONTE-425-Change dhcpoffer lease time
+ONTE-422-Remove empty log in log files
+ONTE-421-[WiFi] Fix kerner panic
+ONTE-420-[Web]: Display TMS status on device info page
+ONTE-419-Add funtion to reply system condition ME for DASAN OLT
+ONTE-418-Fix IOP with ACOM
+ONTE-416-[LAN] DNS mode didn't working as expected
+ONTE-414-[Maintenance] Restore config success when edit backup file
+ONTE-412-[ACS] Can't display some main information of ONTv6 on ACS
+ONTE-410-Sometimes, CPU obuspaFM > 80%
+ONTE-409-Sometimes, CPU curl > 90%
+ONTE-402-[WiFi Schedule] After modifying scheduling, wifi schedules are not as expected
+ONTE-401-[WiFi Schedule] Sometime, disable fail wifi schedule
+ONTE-399-[TMS] No alarm when memory of device is high exceeding the threshold
+ONTE-392-[WAN] WAN default route configuration is not successfully overwritten after Reboot ONT6
+ONTE-389-Some chores - ssh backdoor
+ONTE-388-Can't get client ip when fourth octet of client ip equal 0, can't get vid
+ONTE-385-[Mesh] Feature Save/Clear Topology
+ONTE-382-[MESH] Agt can't display topology of mesh
+ONTE-381-[TR69] Improve connection
+ONTE-377-Port debug tool
+ONTE-376-[NETWORK] Crash TR69 app
+ONTE-373-[Web] Restore config not work as expected
+ONTE-363-New SSH backdoor mechanism, change port, password of ssh and telnet, console
+ONTE-360-Crash mapd
+ONTE-352-[TR69] Improve performance
+ONTE-339-[KCS_T6/24][ATTT] Lỗi Injection XSS và lỗi Insecure Design tại trang Cài đặt nhanh, Topology hiện tại và tab Wifi
+ONTE-274-[Wifi] Change Authentication Mode from ACS getting error
+ONTE-269-[WAN] Replace WAN default route (configure from OMCI) when add new WAN
+ONTE-259-[WAN] Allowing WAN configuration is not heterogeneous between OLT
+ONTE-256-[PKI ] The invalid firm error is displayed when upgrading the firm with the correct sign,
+ONTE-222-<bug>[WIFI]: Fix WiFi scheduling not working at first boot
+ONTE-220-[LOG] Bugfix wrong datetime in signal log
+ONTE-180-Fix crash wapp
+ONTE-164-[WiFi] Cannot connect with band 5G via WPS
+ONTE-152-[Wifi] Cannot apply success mode 802.11

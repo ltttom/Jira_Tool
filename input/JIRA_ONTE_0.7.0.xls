@@ -1,0 +1,996 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+<title>Network Infrastructure R&D Center</title>
+<style type="text/css">
+table {
+    mso-displayed-decimal-separator:"\.";
+    mso-displayed-thousand-separator:"\,";
+}
+body
+{
+    margin: 0px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+
+</style>
+<META HTTP-EQUIV="Content-Type" Content="application/vnd.ms-excel; charset=UTF-8">
+<!-- JRA-7598 - ensure fields (e.g. description) occupy only one cell - even fields containing newlines. -->
+<!--
+Vertical align all cells to the top, in order to align all issue rows of issuetable to the top,
+since Excel does not use or save the css files it is hardcoded here.
+-->
+<style>
+@page
+{
+mso-page-orientation:landscape;
+margin:.25in .25in .5in .25in;
+mso-header-margin:.5in;
+mso-footer-margin:.25in;
+mso-footer-data:"&R&P of &N";
+mso-horizontal-page-align:center;
+mso-vertical-page-align:center;
+}
+
+td.issuekey,
+td.issuetype,
+td.status {
+    mso-style-parent: "";
+    mso-number-format: \@;
+    text-align: left;
+}
+br
+{
+    mso-data-placement:same-cell;
+}
+
+td
+{
+    vertical-align: top;
+}
+</style>
+
+<!--[if gte mso 9]><xml>
+<x:ExcelWorkbook>
+<x:ExcelWorksheets>
+<x:ExcelWorksheet>
+<x:Name>general_report</x:Name>
+<x:WorksheetOptions>
+<x:Print>
+<x:ValidPrinterInfo/>
+</x:Print>
+</x:WorksheetOptions>
+</x:ExcelWorksheet>
+</x:ExcelWorksheets>
+</x:ExcelWorkbook>
+</xml><![endif]-->
+</head>
+<body>
+
+<table border="1">
+    <tr bgcolor="#ffffff" height="29">
+        <td colspan="6">
+            <img src="http://172.20.1.73:8080/jira-logo-scaled.png" width="140" height="29" border="0" alt="Network Infrastructure R&D Center">
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">
+            <a href="http://172.20.1.73:8080/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+ONTE+AND+fixVersion+%3D+%22SW+Version+0.7.0%22">Network Infrastructure R&D Center</a>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6">
+            Displaying <strong>28</strong> issues at <strong>26/Aug/24 11:56 AM</strong>.
+        </td>
+    </tr>
+</table>
+
+
+
+
+                                        <table id="issuetable"  border="1" cellpadding="3" cellspacing="1" width="100%">
+                        <thead>
+        <tr class="rowHeader">
+            
+                                                            <th class="colHeaderLink headerrow-summary" data-id="summary">
+                            Summary
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-assignee" data-id="assignee">
+                            Assignee
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-status" data-id="status">
+                            Status
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-description" data-id="description">
+                            Description
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-fixVersions" data-id="fixVersions">
+                            Fix Version/s
+                                                    </th>
+                                                
+                                                            <th class="colHeaderLink headerrow-issuekey" data-id="issuekey">
+                            Key
+                                                    </th>
+                                                                    </tr>
+    </thead>
+    <tbody>
+                    
+
+                <tr id="issuerow27536" rel="27536" data-issuekey="ONTE-374" class="issuerow">
+                                            <td class="summary"><p>
+                Porting iperf3
+    </p>
+</td>
+                                            <td class="assignee">            Ho Hung Duy
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      dev
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-374" href="http://172.20.1.73:8080/browse/ONTE-374">ONTE-374</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27474" rel="27474" data-issuekey="ONTE-356" class="issuerow">
+                                            <td class="summary"><p>
+                [TR69] Modify ACS URL
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      {panel:title=Feature |borderStyle=dashed}<br/>
+1. Change format of ACS host to hostname (viettelacsvn) instead IP (ACS IP)<br/>
+2. Cons of feature<br/>
+- Optimize flow of code resolve ACS hostname. Now, tr69 app will be host to resolve acs URL.<br/>
+- Reduce complexity and related connection errors caused by DNS resolver fault.<br/>
+{panel}<br/>
+<br/>
+{panel:title=Description|borderStyle=dashed}<br/>
+Format acs URL in older version (version 0.6 and before)<br/>
+- acs URL: http://10.30.130.101/gpon/dasan/normal (10.30.130.101 will be acs IP)<br/>
+- acs hostname: 10.30.130.101 (IP format)<br/>
+<br/>
+Format acs URL in current version (version 0.7 and later)<br/>
+- acs URL: http://viettelacs.vn/gpon/dasan/normal (viettelacs.vn will be acs hostname)<br/>
+- acs hostname: viettelacs.vn (literally string)<br/>
+<br/>
+{panel}<br/>
+<br/>
+{panel:title=Testing|borderStyle=dashed}<br/>
+1. Load new firmware and do reset factory<br/>
+2. Verify after booting successfull: acs URL must be in new format<br/>
+3. Check some fields<br/>
+4. Perform the tests normally as for old versions (profile bridge is an addition)<br/>
+<br/>
+{panel}<br/>
+<br/>
+{panel:title=Expected result|borderStyle=dashed}<br/>
+1. ONT connects to ACS sucessfully (Can check this result by get Inform_Status in CWMP node by using cmd: tcapi get cwmp_entry Inform_Status. It must be 8)<br/>
+2. Can GET/SET params<br/>
+{panel}<br/>
+
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-356" href="http://172.20.1.73:8080/browse/ONTE-356">ONTE-356</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27471" rel="27471" data-issuekey="ONTE-354" class="issuerow">
+                                            <td class="summary"><p>
+                [TR69] ONT can not connect to ACS
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      Status<br/>
+- ONT can not connect to acs despite valid IP, route, Inform_Status<br/>
+<br/>
+Root cause<br/>
+- Active attribute of cwmp node is empty, this makes tr69 not work<br/>
+<br/>
+Solution<br/>
+- More code to fix this<br/>
+<br/>
+Testing<br/>
+- Simulating empty Active: tcapi set cwmp_entry Active &quot;&quot;<br/>
+- Verify Active: tcapi show cwmp =&gt; Active attribute must be empty<br/>
+- Execute: tcapi commit cwmp<br/>
+- Verify Active again: tcapi show cwmp<br/>
+=&gt; Active node is Yes normally
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-354" href="http://172.20.1.73:8080/browse/ONTE-354">ONTE-354</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27463" rel="27463" data-issuekey="ONTE-350" class="issuerow">
+                                            <td class="summary"><p>
+                [TR69] TR69 takes side effect when performing functions related to other apps
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      Description<br/>
+This issue makes solution to resolve the following issues:<br/>
+1. ONTS-1180<br/>
+2. ONTS-1185<br/>
+3. ONTS-1052<br/>
+<br/>
+Testing<br/>
+- Testing 1, 2 like ONTv2 strategy<br/>
+- Testing 3: <br/>
+1. Device boots successfully<br/>
+2. Check TR69 connection section on web ONT<br/>
+3. IP section and Status section must be in sync with each other (Valid IP/Connected, Invalid IP/Wrong connection)
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-350" href="http://172.20.1.73:8080/browse/ONTE-350">ONTE-350</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27435" rel="27435" data-issuekey="ONTE-340" class="issuerow">
+                                            <td class="summary"><p>
+                [SafeHome] Porting vSafes - VCS security agent
+    </p>
+</td>
+                                            <td class="assignee">            Nguyen Hong Son
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description"></td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-340" href="http://172.20.1.73:8080/browse/ONTE-340">ONTE-340</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27428" rel="27428" data-issuekey="ONTE-338" class="issuerow">
+                                            <td class="summary"><p>
+                [KCS_T6/24] Tính năng Chống tấn công tường lửa SPI
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      Tính năng Chống tấn công tường lửa SPI: Mặc định SPI (Firewall) bật. Tuy nhiên bật hay không bật đều không có tác dụng (Không chặn Ping...)
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-338" href="http://172.20.1.73:8080/browse/ONTE-338">ONTE-338</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27425" rel="27425" data-issuekey="ONTE-335" class="issuerow">
+                                            <td class="summary"><p>
+                [KCS_T6/24][WEB UI]Tính năng Thông tin Web của ONT: Trên Web ONT hiển thị sai băng tần kết nối 
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      Tính năng Thông tin Web của ONT: Trên Web ONT hiển thị sai băng tần kết nối của các thiết bị truy cập vào mạng (Kết nối 2.4 GHz báo 5Ghz và ngược lại)<br/>
+<br/>
+Ghi chú - kq check hotfix ngày 12/6/2024<br/>
+OK<br/>
+Hiển thị đúng với băng tần đang kết nối
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-335" href="http://172.20.1.73:8080/browse/ONTE-335">ONTE-335</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27423" rel="27423" data-issuekey="ONTE-333" class="issuerow">
+                                            <td class="summary"><p>
+                [KCS_T6/24][Parental Control]Tính năng Parental Control: Không chặn được các trang Web lớn như Google và youtube
+    </p>
+</td>
+                                            <td class="assignee">            Nguyen Hong Son
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      Tính năng Parental Control: Không chặn được các trang Web lớn như Google và youtube<br/>
+<br/>
+ kq check hotfix ngày 12/6/2024=&gt; OK (đã chặn được cả web &amp; app)<br/>
+Phát sinh lỗi nhánh: Cấu hình disable schedule không hoạt động như mong đợi
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-333" href="http://172.20.1.73:8080/browse/ONTE-333">ONTE-333</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27419" rel="27419" data-issuekey="ONTE-329" class="issuerow">
+                                            <td class="summary"><p>
+                [KCS_T6/24][Tem nhãn] Tem dán trên thiết bị vG-411W6-2. Thực tế hiển thị trên Web quản lý: vGB-42X6V1
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      Tem dán trên thiết bị vG-411W6-2. Thực tế hiển thị trên Web quản lý: vGB-42X6V1
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-329" href="http://172.20.1.73:8080/browse/ONTE-329">ONTE-329</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27358" rel="27358" data-issuekey="ONTE-318" class="issuerow">
+                                            <td class="summary"><p>
+                [Parental Control] Lost configuration when add max schedules for a rule
+    </p>
+</td>
+                                            <td class="assignee">            Bùi Thế Lâm
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      1. Enable Parental Control<br/>
+2. Thêm 2 rule mới với MAC hợp lệ, URL hợp lệ<br/>
+3. Add thêm 4 schedules với thông tin không hợp lệ ở start time và end time<br/>
+4, Apply lại thông tin, khi có báo lỗi thì tiến hành sửa về gia trị đúng<br/>
+<br/>
+Kết quả: Toàn bộ cấu hình Parental Control biến mất, click nút Add không thấy có action gì xuất hiện<br/>
+Mong muốn: Fix bug<br/>
+<br/>
+- Reason:<br/>
+Vì lí do nào đó kí tự newline bị add xuống node property dùng tcapi ==&gt; đọc lên bị sai và không hiển thị được<br/>
+- Solution: <br/>
+Validate loại bỏ hết kí tự newline trước khi apply xuống.
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-318" href="http://172.20.1.73:8080/browse/ONTE-318">ONTE-318</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27355" rel="27355" data-issuekey="ONTE-317" class="issuerow">
+                                            <td class="summary"><p>
+                [Parental Control] All fields need to validate
+    </p>
+</td>
+                                            <td class="assignee">            Bùi Thế Lâm
+    </td>
+                                            <td class="status">
+                Reopened
+    </td>
+                                            <td class="description">      1. Enable Parental control<br/>
+2. Add rule mới<br/>
+- Nhập trường MAC không hợp lệ. Ví dụ: XX-XX-XX-XX-XX-XX<br/>
+- Nhập trường URL không hợp lệ: kí tự đặc biệt ko theo quy ước của url<br/>
+Kết quả: Không validate vẫn cho apply bình thường<br/>
+3. Thêm schedule mới<br/>
+- Nhập start time và end time không hợp lệ ví dụ 10:11:<br/>
+- Nhập start time = end time<br/>
+- Nhập start time &gt; end time<br/>
+Kết quả: chỉ báo lỗi format HH:SS và thời gian hợp lệ không báo đúng lỗi đang gặp<br/>
+Mong muốn: Fix bug<br/>
+
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-317" href="http://172.20.1.73:8080/browse/ONTE-317">ONTE-317</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27354" rel="27354" data-issuekey="ONTE-316" class="issuerow">
+                                            <td class="summary"><p>
+                [Firewall] Enable firewall but still ping ok from WAN
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      1. Thiết bị ONTv6 firm v0.6.0 profile H2M1V1 vlan 35 có dịch vụ internet bình thường<br/>
+2. Enable Firewall<br/>
+3. Ping IP WAN từ mạng ngoài<br/>
+Kết quả: vẫn ping thành công tới địa chỉ IP WAN<br/>
+Mong muốn: Ping timeout không thành công
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-316" href="http://172.20.1.73:8080/browse/ONTE-316">ONTE-316</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27347" rel="27347" data-issuekey="ONTE-313" class="issuerow">
+                                            <td class="summary"><p>
+                [KCS] Fix bug can ping ONT from WAN
+    </p>
+</td>
+                                            <td class="assignee">            Pham Trung Hieu
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      iptables command use wrong syntax
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-313" href="http://172.20.1.73:8080/browse/ONTE-313">ONTE-313</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27328" rel="27328" data-issuekey="ONTE-302" class="issuerow">
+                                            <td class="summary"><p>
+                [WiFi Schedule] Do not apply rules of success at a special time
+    </p>
+</td>
+                                            <td class="assignee">            Vũ Ngọc Cường
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Cấu hình dịch vụ cho ONT6<br/>
+2. Kết nối thiết bị bất kì vào wifi ONT6<br/>
+3. Tại thời điểm 12:00, áp dụng một rule chặn wifi từ 11:00 đến 13:00 cho thiết bị tại bước 2<br/>
+4. Kiểm tra kết nối wifi tại bước 2<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+3. Apply thành công rule<br/>
+4. Thiết bị bị đá ra khỏi wifi và không kết nối lại được trong khoảng thời gian 11:00 đến 13:00<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+4. Thiết bị vẫn kết nối đến wifi bình thường<br/>
+{panel}
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-302" href="http://172.20.1.73:8080/browse/ONTE-302">ONTE-302</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27327" rel="27327" data-issuekey="ONTE-301" class="issuerow">
+                                            <td class="summary"><p>
+                [ACS] Some Information is wrong
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Cấu hình dịch vụ cho ONT6 thông với ACS (online trên EMS)<br/>
+2. Kiểm tra các thông tin BRAS, gateway, hardware version, dhcp pool, dns server<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+2. Hiển thị đúng các thong tin trên<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+2. Thực tế các thông tin đang hiển thị là:<br/>
+BRAS: trống<br/>
+Gateway: 0.0.0.0<br/>
+Hardware version: ECNT-HW-V1.0<br/>
+max address: 192.168.1.101 (trên thiết bị là 192.168.1.254)<br/>
+dns server: 0.0.0.0/0.0.0.0<br/>
+{panel}
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-301" href="http://172.20.1.73:8080/browse/ONTE-301">ONTE-301</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27309" rel="27309" data-issuekey="ONTE-295" class="issuerow">
+                                            <td class="summary"><p>
+                Fail manual + auto software download OLT ALU
+    </p>
+</td>
+                                            <td class="assignee">            Bui Dinh Dung
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      On ALU OLT, when provisioned with a software version on OLT normally without any dot e.g. <br/>
+sw-ctrl 5 hw-version VG421WDMS01<br/>
+  ont-variant vG-421WD<br/>
+  plnd-sw-version V2601240401<br/>
+  plnd-sw-ver-conf V2601240401<br/>
+  sw-dwload-ver V2601240401<br/>
+exit<br/>
+<br/>
+OR<br/>
+<br/>
+interface 1/1/2/1/33 sw-ver-pland V0700240526<br/>
+  sernum VTGR:60F1B894<br/>
+  subslocid WILDCARD<br/>
+  fec-up enable<br/>
+  sw-dnload-version V0700240526<br/>
+  plnd-var vG-421WD<br/>
+  enable-aes enable<br/>
+  log-auth-pwd plain:******<br/>
+  planned-us-rate nominal-line-rate<br/>
+  admin-state up<br/>
+exit<br/>
+<br/>
+<br/>
+After finish software download ONU answer software image with the wrong answer. Software version has Dot.<br/>
+<br/>
+OMCI Protocol, ONU&lt; Get                  - Software Image<br/>
+    Transaction Correlation ID: 32602<br/>
+    Message Type = Get<br/>
+        0... .... = Destination Bit: 0x0<br/>
+        .0.. .... = Acknowledge Request: 0x0<br/>
+        ..1. .... = Acknowledgement: 0x1<br/>
+        ...0 1001 = Message Type: Get (9)<br/>
+    Device Identifier: 0x0a<br/>
+    Message Identifier, ME Class = Software Image, Instance = 0<br/>
+        Managed Entity Class: Software Image (0007)<br/>
+        ME.CLss: 0x0007<br/>
+        Managed Entity Instance: 0x0000<br/>
+    Result: Command processed successfully (00)<br/>
+    Attribute Mask (0xf000)<br/>
+        1111000000000000<br/>
+    Attribute List<br/>
+        01: Version (302e372e302e3234303532360000)<br/>
+        02: Is committed (00)<br/>
+        03: Is active (00)<br/>
+        04: Is valid (01)<br/>
+<br/>
+0000  00 00 00 00 00 02 00 00 00 00 00 01 88 b5 7f 5a   ...............Z<br/>
+0010  29 0a 00 07 00 00 00 f0 00 30 2e 37 2e 30 2e 32   )........0.7.0.2<br/>
+0020  34 30 35 32 36 00 00 00 00 01 00 00 00 00 00 00   40526...........<br/>
+0030  00 00 00 00 00 00 00 00 00 28 00 00               .........(..<br/>
+<br/>
+OLT failed to match the answerd software version with the provisioned one. And stop activating the ONU, stop sending activate and commit software image =&gt; ONU stop functioning<br/>
+<br/>
+*Solution*<br/>
+Write hook function to handle software version<br/>
+
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-295" href="http://172.20.1.73:8080/browse/ONTE-295">ONTE-295</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27305" rel="27305" data-issuekey="ONTE-293" class="issuerow">
+                                            <td class="summary"><p>
+                Crash OMCI when querying igmp information
+    </p>
+</td>
+                                            <td class="assignee">            Kiều Tấn Phát
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      When querying igmp information on OLT Dasan, ont reboot cause of omci crash. Detail as in signal log file
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-293" href="http://172.20.1.73:8080/browse/ONTE-293">ONTE-293</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27298" rel="27298" data-issuekey="ONTE-292" class="issuerow">
+                                            <td class="summary"><p>
+                Không hiển thị tính năng uplink mirroring (roadmap 3m)
+    </p>
+</td>
+                                            <td class="assignee">            Tran Uy Hoang
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      Không tìm thấy tính năng Uplink mirroring (roadmap 3 tháng) <br/>
+Tính năng này đã pass ở các version trước
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-292" href="http://172.20.1.73:8080/browse/ONTE-292">ONTE-292</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27153" rel="27153" data-issuekey="ONTE-275" class="issuerow">
+                                            <td class="summary"><p>
+                [TR-069] Bug related TR069
+    </p>
+</td>
+                                            <td class="assignee">            Trần Ngọc Trâm
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      + Hiện tại Web không hiển thị được thông tin IP của TR-069 mặc dù kết nối thành công<br/>
++ Không sử dụng dữ liệu GPONSN mà sử dụng SerialNumber để lấy dữ liệu kết nối với ACSServer (Mong muốn sử dụng đúng gponsn)
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-275" href="http://172.20.1.73:8080/browse/ONTE-275">ONTE-275</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27148" rel="27148" data-issuekey="ONTE-270" class="issuerow">
+                                            <td class="summary"><p>
+                [WAN] Index of WAN need to follow WAN pvc
+    </p>
+</td>
+                                            <td class="assignee">            Bùi Thế Lâm
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      Hiện nay, khi add thêm WAN, thứ tự của WAN rất lộn xộn, nhiều WAN có số thứ tự trùng lặp, <br/>
+khi cần đối chiếu index của WAN với index trên ACS thấy không trùng nhau (ví dụ trên ACS đang là WAN2 nhưng trên web hiển thị số thứ tự là 7_WAN)<br/>
+Mong muốn: Cần khớp số thứ tự hiển thị trên Web của WAN với WAN_pvc khi cấu hình
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-270" href="http://172.20.1.73:8080/browse/ONTE-270">ONTE-270</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27137" rel="27137" data-issuekey="ONTE-262" class="issuerow">
+                                            <td class="summary"><p>
+                [Mesh] Unable to auto rebuilt mesh network after reboot Ctrl/Agt
+    </p>
+</td>
+                                            <td class="assignee">            Nguyễn Đặng Chung Đức
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Tạo mạng mesh Agt1 --wifi-- Ctrl --lan-- Agt2 --lan-- Agt3<br/>
+2. Reboot Ctrl -&gt; Kiểm tra tái thiết lập mạng mesh sau khi Ctrl boot lên<br/>
+3. Reboot lần lượt các Agt -&gt; Kiểm tra tái thiết lập mạng mesh sau khi các Agt boot lên<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+2. Sau khi Ctrl boot lên, mạng mesh được phục hồi bình thường<br/>
+3. Sau khi Agt boot lên, mạng mesh đươc phục hổi, các Agt mesh lại thành công<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+2. Các Agt không mesh lại được với Ctrl<br/>
+3. Thỉnh thoảng có Agt không mesh lại được với Ctrl<br/>
+{panel}<br/>
+<br/>
+{panel:title=Root Cause |borderStyle=dashed}<br/>
+2. Do agent APw6 scanning backhaul trên 2G nên không tìm thấy BSSID của Ctrl để kết nối<br/>
+{panel}<br/>
+<br/>
+{panel:title=Solutions |borderStyle=dashed}<br/>
+2. Chỉ scanning trên 5G<br/>
+{panel}<br/>
+Trường hợp tương tự xảy ra khi disable và enable lại mesh
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-262" href="http://172.20.1.73:8080/browse/ONTE-262">ONTE-262</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27136" rel="27136" data-issuekey="ONTE-261" class="issuerow">
+                                            <td class="summary"><p>
+                [Mesh] Mesh connection between ONT6 and AP6 is not stable
+    </p>
+</td>
+                                            <td class="assignee">            Nguyễn Đặng Chung Đức
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Tạo mạng mesh ONT6 (v0.5.0) và AP6 (v0.2.0) có Agt1 kết nối qua wifi, Agt2 kết nối qua lan<br/>
+2. Thực hiện thêm Agt3 AP6 vào mạng mesh qua wifi<br/>
+3. Kết nối Agt4 AP6 với Agt2 qua lan -&gt; rút kết nối lan<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+2. Agt3 mesh thành công với mạng mesh qua wifi, cấu hình wifi được đồng bộ thành công, Agt3 nhận được IP và học được backhaul.<br/>
+3. Agt4 kết nối thành công với mạng mesh qua lan.<br/>
+Sau khi rút kết nối lan, Agt4 kết nối thành công với mạng mesh qua wifi.<br/>
+Cấu hình wifi, backhaul, lan được đồng bộ thành công.<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+2. Agt3 được cấp IP nhưng không đồng bộ cấu hình wifi và không học được backhaul<br/>
+3. Sau khi rút kết nối lan giữa Agt4 với Agt2, Agt4 không hiển thị trong topology. tuy nhiên cấu hình wifi, IP, backhauk vẫn được giữ<br/>
+{panel}
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-261" href="http://172.20.1.73:8080/browse/ONTE-261">ONTE-261</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27127" rel="27127" data-issuekey="ONTE-253" class="issuerow">
+                                            <td class="summary"><p>
+                [Mesh] Hyperlink Agt is not displayed
+    </p>
+</td>
+                                            <td class="assignee">            Nguyen Thanh Duong
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      Pre: Tạo mạng mesh ONT6 - AP6 (1 Agt kết nối lan, 1 Agt kết nối wifi)<br/>
+AP6 FW V0.2<br/>
+<br/>
+1. Truy cập web ONT -&gt; Topology hiện tại<br/>
+2. Kiểm tra thông tin trên Topology<br/>
+3. Kiểm tra hyperlink Agt website<br/>
+<br/>
+Actual result:<br/>
+Không hiển thị hyper link<br/>
+dev comment: do ip của agent không có trong bảng Arp<br/>
+<br/>
+Expected result:<br/>
+3. Hiển thị hyper link, người dùng click hyerlink có thể chuyển hướng đến trang web agt thành công
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-253" href="http://172.20.1.73:8080/browse/ONTE-253">ONTE-253</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow27121" rel="27121" data-issuekey="ONTE-247" class="issuerow">
+                                            <td class="summary"><p>
+                [WiFi] Khi enable mesh band 2Ghz chỉ hiển thị 3 SSID
+    </p>
+</td>
+                                            <td class="assignee">            Vũ Ngọc Cường
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      Pre: Enable mesh<br/>
+<br/>
+Steps:<br/>
+1. Truy cập Web ONT &gt; Wi-Fi &gt; Thiết lập Wi-Fi 2.4GHz<br/>
+2. Kiểm tra số lượng interface WiFi trên băng tần 2G<br/>
+<br/>
+Actual result:<br/>
+2. Hiển thị 3 SSID<br/>
+<br/>
+Expected result:<br/>
+2. Hiển thị đủ 4 SSID
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-247" href="http://172.20.1.73:8080/browse/ONTE-247">ONTE-247</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow26911" rel="26911" data-issuekey="ONTE-222" class="issuerow">
+                                            <td class="summary"><p>
+                &lt;bug&gt;[WIFI]: Fix WiFi scheduling not working at first boot
+    </p>
+</td>
+                                            <td class="assignee">            Vũ Ngọc Cường
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      {panel:title=Introduction: |borderStyle=dashed}<br/>
+Fix Wifi scheduling not working at first boot<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Test: |borderStyle=dashed}<br/>
+Open Wi-Fi scheduling page on web: Applications/Wi-Fi scheduling<br/>
+Enable or disable rules in the Status column<br/>
+Press the Apply Button to set rules<br/>
+Click the pencil icon to edit rule<br/>
+More details in ONTE-179<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Root cause |borderStyle=dashed}<br/>
+chmod for script file in boot function but first boot, script file is not existed<br/>
+{panel}<br/>
+<br/>
+{panel:title= Solution|borderStyle=dashed}<br/>
+Create script files in boot function before chmod<br/>
+{panel}
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0,                     SW Version 0.9.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-222" href="http://172.20.1.73:8080/browse/ONTE-222">ONTE-222</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow26846" rel="26846" data-issuekey="ONTE-211" class="issuerow">
+                                            <td class="summary"><p>
+                [Wifi] Unable to set fixed channel
+    </p>
+</td>
+                                            <td class="assignee">            Pham Thu Nga
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      Steps:<br/>
+1. Login ONT6 &gt; Wifi configuration &gt; Thiết lập wiffi 2Ghz/5Ghz<br/>
+2. Thay đổi channel từ auto sang 1 channel cố định -&gt; Apply<br/>
+<br/>
+Actual test:<br/>
+2. Không có list channel để chọn, channel hiện tại được fix cứng là giá trị auto<br/>
+<br/>
+Expected test:<br/>
+2. Có list channel để lựa chọn và apply thành công
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-211" href="http://172.20.1.73:8080/browse/ONTE-211">ONTE-211</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow26836" rel="26836" data-issuekey="ONTE-203" class="issuerow">
+                                            <td class="summary"><p>
+                [Mesh] RSSI between Ctrl and Agt is wrong  in topology
+    </p>
+</td>
+                                            <td class="assignee">            Nguyen Thanh Duong
+    </td>
+                                            <td class="status">
+                Resolved
+    </td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. ONT6 hoạt động với vai trò Ctrl và có internet<br/>
+2. Mesh Agt AP5 với ONT6 qua Wifi<br/>
+3. Truy cập Topology và kiểm tra giá trị RSSI giữa Ctrl và Agt<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+3. RSSI hiển thị đúng giá trị <br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+3. RSSI hiển thị giá trị không hợp lý =0dBm hoặc =1dBm<br/>
+{panel}
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-203" href="http://172.20.1.73:8080/browse/ONTE-203">ONTE-203</a>
+</td>
+                    </tr>
+
+
+                <tr id="issuerow26369" rel="26369" data-issuekey="ONTE-99" class="issuerow">
+                                            <td class="summary"><p>
+                [WiFi] Cannot enable BandSteerig on Easy Setup page
+    </p>
+</td>
+                                            <td class="assignee">            Vũ Ngọc Cường
+    </td>
+                                            <td class="status">
+                Closed
+    </td>
+                                            <td class="description">      {panel:title=Steps: |borderStyle=dashed}<br/>
+1. Truy cập web ONT<br/>
+2. Thực hiện enabe Band Steering &gt; apply<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Expected Result: |borderStyle=dashed}<br/>
+2. Bandsteering được thay đổi thành công, 2 SSID 1 của 2 band đều thực hiện đồng bộ giống band 2G<br/>
+{panel}<br/>
+<br/>
+<br/>
+{panel:title=Actual test |borderStyle=dashed}<br/>
+2. Cấu hình của 2 SSID 1 được đồng bộ giống nhau nhưng bandsteering vẫn không được enable thành công. Trạng thái hiển thị trên web vẫn là disable<br/>
+{panel}
+  </td>
+                                            <td class="fixVersions">                        SW Version 0.7.0            </td>
+                                            <td class="issuekey">
+
+    <a class="issue-link" data-issue-key="ONTE-99" href="http://172.20.1.73:8080/browse/ONTE-99">ONTE-99</a>
+</td>
+                    </tr>
+                </tbody>
+    </table>
+    <div class="end-of-stable-message"></div>
+            <table border="1" >
+<tr>
+    <td bgcolor="#dddddd" colspan="6"><font size="1">
+        Generated at Mon Aug 26 11:56:46 ICT 2024 by Nguyen Hong Son using JIRA 6.2.1#6256-sha1:f72b2831aad07cd856610541aa2dab76488bde7f.
+    </font></td>
+</tr>
+</table>
+
+</body>
+</html>
